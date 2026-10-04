@@ -216,7 +216,7 @@ export default function SettingsScreen({
   };
 
   const openFeedback = () => {
-    const subject = encodeURIComponent("Skull King feedback");
+    const subject = encodeURIComponent("Skull Ledger feedback");
     void Linking.openURL(
       `mailto:${FEEDBACK_EMAIL}?subject=${subject}`
     ).catch(() => undefined);

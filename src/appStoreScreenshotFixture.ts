@@ -72,15 +72,15 @@ const FINISHED_GAME_BONUSES: readonly Partial<BonusInput>[] = [
   { colored14: 1 },
   { black14: true },
   { mermaidByPirate: 1 },
-  { pirateBySkullKing: 1 },
-  { mermaidCapturesSkullKing: true },
-  { davyJonesLeviathans: 1 },
-  { secondCaptured: true },
+  { colored14: 3 },
+  { mermaidByPirate: 2 },
+  { colored14: 2 },
+  { colored14: 3 },
   { expansion8: 2 },
   { colored14: 2 },
   { black14: true, mermaidByPirate: 1 },
-  { pirateBySkullKing: 2 },
-  { mermaidCapturesSkullKing: true, black14: true },
+  { mermaidByPirate: 2, black14: true },
+  { mermaidByPirate: 2, black14: true },
 ];
 
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;

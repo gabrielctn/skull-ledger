@@ -67,7 +67,7 @@ export const fr: Strings = {
     supportCost: (amountEur) =>
       `Publier l’application sur l’App Store coûte ${amountEur} €/an au développeur. Vos dons servent d’abord à payer cette facture.`,
     disclaimer:
-      "Application créée par un joueur, sans affiliation, approbation ni parrainage de Grandpa Beck’s Games, de ses éditeurs ou distributeurs. « Skull King » et les éléments officiels du jeu appartiennent à leurs ayants droit respectifs.",
+      "Application créée par un joueur, sans affiliation, approbation ni parrainage d’un éditeur de jeux. Les noms de jeux et de cartes appartiennent à leurs ayants droit respectifs.",
     offline: "Fonctionne hors ligne · installable depuis le navigateur",
   },
 
@@ -315,7 +315,7 @@ export const fr: Strings = {
     ghostHint:
       "La variante à 2 joueurs décrite dans le livret : distribuez une troisième main pour le fantôme Barbe Grise. Il joue mais ne mise jamais et ne marque pas. Comme il vous vole certains plis, vos deux totaux peuvent être inférieurs au nombre de cartes distribuées.",
     rounds: "Manches",
-    roundsHint: "Une partie standard de Skull King compte 10 manches.",
+    roundsHint: "Une partie standard compte 10 manches.",
     structureHint:
       "Le livret propose plusieurs façons de distribuer les cartes. Choisissez la structure des manches de cette partie.",
     structureNames: {
@@ -334,7 +334,7 @@ export const fr: Strings = {
     scoringHint:
       "Le livret propose deux façons officielles de compter les points. Choisissez celle de cette partie.",
     scoringNames: {
-      classic: "Les scores selon Skull King",
+      classic: "Scores standard",
       rascal: "Les scores selon Rascal",
     },
     scoringHints: {
@@ -635,7 +635,7 @@ export const fr: Strings = {
     copied: "Copié.",
     downloaded: "Téléchargé.",
     error: "Impossible de partager le récapitulatif.",
-    summaryTitle: "Récapitulatif de la partie Skull King",
+    summaryTitle: "Récapitulatif de la partie",
     awardsHeading: "Distinctions de l’équipage",
     gameDate: (date) => `Partie du ${date}`,
     rankingLine: (medal, name, score) =>

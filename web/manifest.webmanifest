@@ -2,9 +2,9 @@
   "name": "Skull Ledger",
   "short_name": "Skull Ledger",
   "description": "Skull Ledger is an unofficial fan-made scoring app. Works fully offline.",
-  "id": "/skull-king-crew-ledger/",
-  "start_url": "/skull-king-crew-ledger/",
-  "scope": "/skull-king-crew-ledger/",
+  "id": "/skull-ledger/",
+  "start_url": "/skull-ledger/",
+  "scope": "/skull-ledger/",
   "display": "standalone",
   "orientation": "any",
   "launch_handler": {
@@ -14,19 +14,19 @@
   "background_color": "#0b1722",
   "icons": [
     {
-      "src": "/skull-king-crew-ledger/icons/icon-192.png",
+      "src": "/skull-ledger/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/skull-king-crew-ledger/icons/icon-512.png",
+      "src": "/skull-ledger/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/skull-king-crew-ledger/icons/icon-512-maskable.png",
+      "src": "/skull-ledger/icons/icon-512-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

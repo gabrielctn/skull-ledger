@@ -66,7 +66,7 @@ export const de: Strings = {
     supportCost: (amountEur) =>
       `Die App im App Store zu veröffentlichen kostet den Entwickler ${amountEur} €/Jahr. Beiträge decken zuerst diese Rechnung.`,
     disclaimer:
-      "Von einem Spieler erstellt, ohne Verbindung zu, Unterstützung oder Sponsoring durch Grandpa Beck’s Games, dessen Verlage oder Händler. „Skull King“ und die offiziellen Spielelemente gehören den jeweiligen Rechteinhabern.",
+      "Von einem Spieler erstellt, ohne Verbindung zu, Unterstützung oder Sponsoring durch einen Spieleverlag. Spiel- und Kartennamen gehören den jeweiligen Rechteinhabern.",
     offline: "Funktioniert offline · über den Browser installieren",
   },
 
@@ -316,7 +316,7 @@ export const de: Strings = {
     ghostHint:
       "Die Zwei-Spieler-Variante aus der Anleitung: Teile eine dritte Hand für den Graubart-Geist aus. Er spielt, bietet und punktet aber nie. So stiehlt er Stiche. Die Summe eurer Stiche kann kleiner als die Zahl der ausgeteilten Karten sein.",
     rounds: "Runden",
-    roundsHint: "Eine Standardpartie Skull King hat 10 Runden.",
+    roundsHint: "Eine Standardpartie hat 10 Runden.",
     structureHint:
       "Die Anleitung schlägt mehrere Kartenverteilungen vor. Wähle die Rundenstruktur für diese Partie.",
     structureNames: {
@@ -335,7 +335,7 @@ export const de: Strings = {
     scoringHint:
       "Die Anleitung bietet zwei offizielle Wertungssysteme. Wähle das System für diese Partie.",
     scoringNames: {
-      classic: "Skull-King-Wertung",
+      classic: "Standardwertung",
       rascal: "Rascals Wertung",
     },
     scoringHints: {
@@ -637,7 +637,7 @@ export const de: Strings = {
     copied: "Kopiert.",
     downloaded: "Heruntergeladen.",
     error: "Der Rückblick konnte nicht geteilt werden.",
-    summaryTitle: "Skull-King-Spielrückblick",
+    summaryTitle: "Spielrückblick",
     awardsHeading: "Auszeichnungen der Crew",
     gameDate: (date) => `Gespielt am ${date}`,
     rankingLine: (medal, name, score) =>

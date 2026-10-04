@@ -1,6 +1,6 @@
 /** Public web destination opened by links created in the native app. */
 export const DEPLOYED_PWA_BASE_URL =
-  "https://gabrielctn.github.io/skull-king-crew-ledger/";
+  "https://gabrielctn.github.io/skull-ledger/";
 
 /** Current web page without query or hash, or the deployed PWA on native. */
 export function webShareBaseUrl(): string {

@@ -5,7 +5,7 @@ card game, built with **React Native + Expo (web) + TypeScript** and deployed as
 static site to **GitHub Pages**. Add it to your home screen and it runs without any
 network — perfect for a table with no wifi.
 
-**Live:** https://gabrielctn.github.io/skull-king-crew-ledger/
+**Live:** https://gabrielctn.github.io/skull-ledger/
 
 > **Unofficial fan project.** This app is not affiliated with, endorsed by, or
 > sponsored by Grandpa Beck's Games, its publishers, or distributors. "Skull King"
@@ -162,10 +162,10 @@ npm run build:web  # expo export -p web  +  scripts/build-pwa.mjs
 ```
 
 The service worker and manifest only exist in this production export, not in the
-dev server. The export is served under the `/skull-king-crew-ledger/` sub-path
+dev server. The export is served under the `/skull-ledger/` sub-path
 (set by `experiments.baseUrl` in `app.json`), so to test it the way GitHub Pages
 serves it, expose `dist/` at that path — e.g. symlink it into a folder named
-`skull-king-crew-ledger/` and serve the parent.
+`skull-ledger/` and serve the parent.
 
 ## Native iOS companion
 
@@ -244,7 +244,7 @@ every push to `main` builds the PWA and publishes `dist/` to Pages.
 
 **One-time setup:** in the repo, go to **Settings → Pages → Build and deployment**
 and set **Source** to **"GitHub Actions"**. The site then lives at
-https://gabrielctn.github.io/skull-king-crew-ledger/.
+https://gabrielctn.github.io/skull-ledger/.
 
 If you fork/rename the repo, update `experiments.baseUrl` in `app.json` and the
 `start_url`/`scope`/icon paths in `web/manifest.webmanifest` to the new sub-path.

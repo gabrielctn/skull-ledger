@@ -74,25 +74,7 @@ export const APP_STORE_SCREENSHOT_SHOTS = [
   },
   {
     index: 6,
-    stem: "06-classic-rascal-expansion",
-    headline: {
-      en: "Classic, Rascal and expansion cards.",
-      fr: "Classique, Rascal et cartes d’extension.",
-    },
-    rawSources: ["setup-scoring", "setup-expansion"],
-  },
-  {
-    index: 7,
-    stem: "07-greybeards-ghost",
-    headline: {
-      en: "Two players? Summon Greybeard’s Ghost.",
-      fr: "À deux ? Invoquez le fantôme Barbe Grise.",
-    },
-    rawSources: ["greybeard-setup", "greybeard-game"],
-  },
-  {
-    index: 8,
-    stem: "08-offline-ad-free",
+    stem: "06-offline-ad-free",
     headline: {
       en: "Every round saved. Offline. Ad-free.",
       fr: "Chaque manche sauvegardée. Hors ligne. Sans pub.",

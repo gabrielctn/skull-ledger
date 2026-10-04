@@ -71,7 +71,7 @@ export const en: Strings = {
     supportCost: (amountEur) =>
       `Publishing the app on the App Store costs the developer €${amountEur} a year. Contributions go towards that bill first.`,
     disclaimer:
-      "Made by a player with no affiliation, endorsement, or sponsorship from Grandpa Beck’s Games, its publishers, or distributors. “Skull King” and the official game elements belong to their respective rights holders.",
+      "Made by a player with no affiliation, endorsement, or sponsorship from any game publisher. Game and card names belong to their respective rights holders.",
     offline: "Works offline · install from your browser",
   },
 
@@ -318,7 +318,7 @@ export const en: Strings = {
     ghostHint:
       "The two-player variant described in the rulebook: deal a third hand for the Greybeard ghost. He plays but never bids or scores, so he steals some tricks. Your two trick counts can total less than the cards dealt.",
     rounds: "Rounds",
-    roundsHint: "Standard Skull King is 10 rounds.",
+    roundsHint: "A standard game is 10 rounds.",
     structureHint:
       "The rulebook suggests several ways to deal the cards. Pick the round structure for this game.",
     structureNames: {
@@ -337,7 +337,7 @@ export const en: Strings = {
     scoringHint:
       "The rulebook offers two official ways to count points. Pick this game's system.",
     scoringNames: {
-      classic: "Skull King scoring",
+      classic: "Standard scoring",
       rascal: "Rascal's scoring",
     },
     scoringHints: {
@@ -632,7 +632,7 @@ export const en: Strings = {
     copied: "Copied.",
     downloaded: "Downloaded.",
     error: "Could not share the recap.",
-    summaryTitle: "Skull King game recap",
+    summaryTitle: "Game recap",
     awardsHeading: "Crew awards",
     gameDate: (date) => `Played ${date}`,
     rankingLine: (medal, name, score) =>

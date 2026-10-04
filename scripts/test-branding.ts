@@ -69,8 +69,8 @@ check(
 check(
   "registered identifiers remain compatible",
   appConfig.ios.bundleIdentifier === "com.gabrielcretin.skullking" &&
-    appConfig.experiments.baseUrl === "/skull-king-crew-ledger" &&
-    manifest.id === "/skull-king-crew-ledger/"
+    appConfig.experiments.baseUrl === "/skull-ledger" &&
+    manifest.id === "/skull-ledger/"
 );
 check(
   "the generated Xcode project uses the rebranded name",
@@ -130,6 +130,28 @@ check(
     zh.home.unofficial.includes("非官方") &&
     zh.home.disclaimer.includes("无任何隶属")
 );
+const thirdPartyName = /skull\s*king|grandpa|beck/i;
+for (const file of [
+  "app-store/description.en-US.txt",
+  "app-store/description.fr-FR.txt",
+  "app-store/review-notes.txt",
+  "web/support.html",
+  "web/privacy.html",
+]) {
+  const text = readFileSync(file, "utf8");
+  check(`${file} names no third-party game or publisher`, !thirdPartyName.test(text));
+}
+for (const [locale, strings] of Object.entries({ en, fr, es, de, ar, zh })) {
+  check(
+    `${locale} first-run and sharing copy names no third-party game or publisher`,
+    ![
+      strings.home.disclaimer,
+      strings.setup.roundsHint,
+      strings.setup.scoringNames.classic,
+      strings.share.summaryTitle,
+    ].some((text) => thirdPartyName.test(text))
+  );
+}
 check("README identifies the project as unofficial", readme.includes("Unofficial fan project"));
 check(
   "Apple installed title is sourced from app configuration",

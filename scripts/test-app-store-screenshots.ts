@@ -207,7 +207,7 @@ deepEq("tablet dimensions", APP_STORE_SCREENSHOT_DEVICES["ipad-13"], {
   width: 2064,
   height: 2752,
 });
-eq("eight unique shot stems", new Set(APP_STORE_SCREENSHOT_SHOTS.map((shot) => shot.stem)).size, 8);
+eq("six unique shot stems", new Set(APP_STORE_SCREENSHOT_SHOTS.map((shot) => shot.stem)).size, 6);
 deepEq(
   "English headlines",
   APP_STORE_SCREENSHOT_SHOTS.map((shot) => shot.headline.en),
@@ -217,8 +217,6 @@ deepEq(
     "Celebrate the winner.",
     "Build your crew’s hall of fame.",
     "One crew. One shared ledger.",
-    "Classic, Rascal and expansion cards.",
-    "Two players? Summon Greybeard’s Ghost.",
     "Every round saved. Offline. Ad-free.",
   ]
 );
@@ -231,8 +229,6 @@ deepEq(
     "Célébrez le vainqueur.",
     "Créez le palmarès de votre équipage.",
     "Un équipage. Un carnet partagé.",
-    "Classique, Rascal et cartes d’extension.",
-    "À deux ? Invoquez le fantôme Barbe Grise.",
     "Chaque manche sauvegardée. Hors ligne. Sans pub.",
   ]
 );
@@ -249,11 +245,29 @@ const finalPaths = APP_STORE_SCREENSHOT_LOCALES.flatMap((locale) =>
     )
   )
 );
-eq("thirty-two unique final paths", new Set(finalPaths).size, 32);
+eq("twenty-four unique final paths", new Set(finalPaths).size, 24);
 check(
-  "French iPad Greybeard path",
+  "French iPad offline path",
   finalPaths.includes(
-    "marketing/app-store/screenshots/fr-FR/ipad-13/07-greybeards-ghost.png"
+    "marketing/app-store/screenshots/fr-FR/ipad-13/06-offline-ad-free.png"
+  )
+);
+// App Review rejected the listing under guideline 4.1(a): captions are store
+// metadata and must not borrow the card game's own names.
+const gameTerms =
+  /skull\s*king|rascal|greybeard|barbe grise|kraken|tigress|tigresse|davy jones|loot|butin|grandpa|beck/i;
+check(
+  "no headline names the card game or its cards",
+  APP_STORE_SCREENSHOT_SHOTS.every(
+    (shot) => !gameTerms.test(shot.headline.en) && !gameTerms.test(shot.headline.fr)
+  )
+);
+check(
+  "finished-game fixture avoids bonuses labelled with card names",
+  !/pirateBySkullKing|mermaidCapturesSkullKing|secondCaptured|davyJonesLeviathans/.test(
+    readFileSync("src/appStoreScreenshotFixture.ts", "utf8")
+      .split("FINISHED_GAME_BONUSES")[1]
+      .split("];")[0]
   )
 );
 
@@ -562,7 +576,7 @@ try {
 
   writeSyntheticScreenshotTree(exportRoot);
   validateAppStoreScreenshotExports(exportRoot);
-  check("a complete synthetic thirty-two-file tree passes", true);
+  check("a complete synthetic twenty-four-file tree passes", true);
 
   const target = finalScreenshotPath(
     exportRoot,

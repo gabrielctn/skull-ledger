@@ -17,5 +17,3 @@ Skull Ledger rassemble les mises, les plis et les bonus, calcule les scores de c
 • Comptez les points hors ligne. Les tables partagées, la sauvegarde cloud et le suivi en direct nécessitent une connexion internet.
 
 Sans inscription, gratuite et sans publicité. Disponible en français, anglais, allemand, espagnol, arabe et chinois simplifié.
-
-Compatibilité : cette application indépendante de suivi des scores est conçue pour le jeu de cartes physique Skull King. Elle ne propose pas de version numérique jouable du jeu. Elle n'est ni affiliée, ni approuvée, ni parrainée par Grandpa Beck's Games, ses éditeurs ou ses distributeurs. Le nom du jeu sert à indiquer la compatibilité ; les droits sur le jeu appartiennent à leurs détenteurs respectifs.

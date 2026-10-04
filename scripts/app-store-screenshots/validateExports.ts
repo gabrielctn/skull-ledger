@@ -58,9 +58,9 @@ function pngFilesBelow(directory: string): string[] {
 export function validateAppStoreScreenshotExports(root: string): void {
   const absoluteRoot = resolve(root);
   const expected = expectedExports(absoluteRoot);
-  if (expected.length !== 32) {
+  if (expected.length !== 24) {
     throw new Error(
-      `Screenshot contract must define exactly 32 exports, got ${expected.length}`
+      `Screenshot contract must define exactly 24 exports, got ${expected.length}`
     );
   }
 
@@ -121,7 +121,7 @@ export function validateAppStoreScreenshotExports(root: string): void {
 
   if (errors.length > 0) throw new Error(errors.join("\n"));
   for (const report of reports) console.log(report);
-  console.log("32 App Store screenshots valid");
+  console.log("24 App Store screenshots valid");
 }
 
 function main(): void {

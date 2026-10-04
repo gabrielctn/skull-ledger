@@ -17,5 +17,3 @@ Skull Ledger keeps bids, tricks and bonus points in one place, calculates each r
 • Keep score offline. Shared tables, cloud backup and live following require an internet connection.
 
 No sign-up is required. Free and ad-free. Available in English, French, German, Spanish, Arabic and Simplified Chinese.
-
-Compatibility: this independent scorekeeping companion is designed for the physical Skull King card game. It does not include a playable digital version of the game. It is not affiliated with, endorsed by or sponsored by Grandpa Beck's Games, its publishers or distributors. The game name is used to identify compatibility; rights to the game belong to their respective holders.

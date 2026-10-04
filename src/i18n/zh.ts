@@ -62,7 +62,7 @@ export const zh: Strings = {
     supportCost: (amountEur) =>
       `将应用发布到 App Store 每年需要开发者支付 ${amountEur} 欧元。支持款项会优先用于这笔费用。`,
     disclaimer:
-      "本应用由玩家制作，与 Grandpa Beck’s Games 及其出版商或经销商无任何隶属、认可或赞助关系。“Skull King”及官方游戏元素归各自权利人所有。",
+      "本应用由玩家制作，与任何游戏出版商无任何隶属、认可或赞助关系。游戏及卡牌名称归各自权利人所有。",
     offline: "支持离线 · 可从浏览器安装",
   },
 
@@ -290,7 +290,7 @@ export const zh: Strings = {
     ghostHint:
       "规则书中的双人变体：为灰胡子幽灵发第三手牌。他会出牌，但从不叫牌或得分，因此会抢走部分墩，两位玩家赢得的墩数之和可能少于发牌数。",
     rounds: "回合数",
-    roundsHint: "标准 Skull King 游戏共 10 回合。",
+    roundsHint: "标准游戏共 10 回合。",
     structureHint: "规则书提供多种发牌方式。请选择本局的回合结构。",
     structureNames: {
       classic: "经典",
@@ -307,7 +307,7 @@ export const zh: Strings = {
     scoring: "计分方式",
     scoringHint: "规则书提供两种官方计分方式。请为本局选择其一。",
     scoringNames: {
-      classic: "Skull King 计分",
+      classic: "标准计分",
       rascal: "Rascal 计分",
     },
     scoringHints: {
@@ -580,7 +580,7 @@ export const zh: Strings = {
     copied: "已复制。",
     downloaded: "已下载。",
     error: "无法分享战报。",
-    summaryTitle: "Skull King 对局战报",
+    summaryTitle: "对局战报",
     awardsHeading: "船员称号",
     gameDate: (date) => `对局日期：${date}`,
     rankingLine: (medal, name, score) => `${medal} ${name}：${score} 分`,

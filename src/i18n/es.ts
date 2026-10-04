@@ -68,7 +68,7 @@ export const es: Strings = {
     supportCost: (amountEur) =>
       `Publicar la aplicación en la App Store le cuesta ${amountEur} €/año al desarrollador. Las contribuciones se destinan primero a esa factura.`,
     disclaimer:
-      "Creada por un jugador sin afiliación, aprobación ni patrocinio de Grandpa Beck’s Games, sus editores o distribuidores. «Skull King» y los elementos oficiales del juego pertenecen a sus respectivos titulares de derechos.",
+      "Creada por un jugador sin afiliación, aprobación ni patrocinio de ninguna editorial de juegos. Los nombres de juegos y cartas pertenecen a sus respectivos titulares de derechos.",
     offline: "Funciona sin conexión · instálala desde tu navegador",
   },
 
@@ -320,7 +320,7 @@ export const es: Strings = {
     ghostHint:
       "La variante para dos jugadores descrita en el reglamento: reparte una tercera mano para el fantasma Barbagris. Juega, pero nunca hace envites ni puntúa, así que roba algunas bazas; la suma de las bazas de los dos jugadores puede ser inferior al número de cartas repartidas.",
     rounds: "Rondas",
-    roundsHint: "Una partida estándar de Skull King tiene 10 rondas.",
+    roundsHint: "Una partida estándar tiene 10 rondas.",
     structureHint:
       "El reglamento propone varias formas de repartir las cartas. Elige la estructura de rondas de esta partida.",
     structureNames: {
@@ -339,7 +339,7 @@ export const es: Strings = {
     scoringHint:
       "El reglamento ofrece dos formas oficiales de contar los puntos. Elige el sistema de esta partida.",
     scoringNames: {
-      classic: "Recuento de Skull King",
+      classic: "Recuento estándar",
       rascal: "Recuento del Bribón",
     },
     scoringHints: {
@@ -642,7 +642,7 @@ export const es: Strings = {
     copied: "Copiado.",
     downloaded: "Descargado.",
     error: "No se ha podido compartir el resumen.",
-    summaryTitle: "Resumen de la partida de Skull King",
+    summaryTitle: "Resumen de la partida",
     awardsHeading: "Premios de la tripulación",
     gameDate: (date) => `Jugado el ${date}`,
     rankingLine: (medal, name, score) =>
