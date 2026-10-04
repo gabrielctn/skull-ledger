@@ -34,7 +34,10 @@
       "display": "standalone",
       "orientation": "any"
     },
-    "plugins": ["./plugins/withSkullKingCrewLedgerAppIntents"],
+    "plugins": [
+      "./plugins/withSkullKingCrewLedgerAppIntents",
+      "./plugins/withMinimumPodDeploymentTarget"
+    ],
     "experiments": {
       "baseUrl": "/skull-ledger"
     },

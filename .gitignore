@@ -46,3 +46,6 @@ output/playwright/
 # Planning docs and marketing assets are kept on disk but out of git.
 docs/superpowers/
 marketing/
+
+# Database dumps contain players' game data.
+supabase-backup-*.sql

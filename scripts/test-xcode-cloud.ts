@@ -90,6 +90,13 @@ check(
   "Expo preserves the existing project slug",
   appConfig.expo.slug === "skull-king-crew-ledger"
 );
+check(
+  "pods below the app's deployment target are raised for Xcode 27",
+  appConfig.expo.plugins.includes("./plugins/withMinimumPodDeploymentTarget") &&
+    readFileSync("plugins/withMinimumPodDeploymentTarget.js", "utf8").includes(
+      "IPHONEOS_DEPLOYMENT_TARGET"
+    )
+);
 
 const success = runPostClone(true);
 const failure = runPostClone(false);
