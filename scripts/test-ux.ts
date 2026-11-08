@@ -277,6 +277,10 @@ check(
     appSource.includes("const nextCurrent = current?.id === gameId ? null : current")
 );
 check(
+  "saved language survives launch instead of reverting to the device language",
+  appSource.includes('<I18nProvider key="loading"')
+);
+check(
   "quick setup exposes an active-rule summary",
   setupSource.includes("const activeRules = [") &&
     setupSource.includes("styles.ruleChips")

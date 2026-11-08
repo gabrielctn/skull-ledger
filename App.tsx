@@ -1042,7 +1042,9 @@ export default function App() {
 
   if (loading || lang === null || settings === null) {
     return (
-      <I18nProvider initialLang={lang ?? detectLang()}>
+      // Keyed so the provider below mounts fresh: React would otherwise keep
+      // this one's state and ignore the saved language once it has loaded.
+      <I18nProvider key="loading" initialLang={lang ?? detectLang()}>
         <LoadingScreen />
       </I18nProvider>
     );
