@@ -7,6 +7,7 @@ import {
   homeHeroSize,
   homeTopInset,
 } from "../src/homeLayout";
+import { readFileSync } from "node:fs";
 
 let failures = 0;
 
@@ -64,6 +65,20 @@ check(
   "desktop hero remains bounded",
   desktopHero.emblem === 216 && desktopHero.skull === 165 && desktopHero.height === 204,
   `emblem=${desktopHero.emblem} skull=${desktopHero.skull} height=${desktopHero.height}`
+);
+
+// Wide screens: the logo column and the "New game" column start on one line.
+// A centred actions column used to drift ~100px below the logo.
+const homeSource = readFileSync("src/screens/HomeScreen.tsx", "utf8");
+const styleLine = (name: string) =>
+  homeSource.match(new RegExp(`\\n  ${name}: \\{[^}]*\\}`))?.[0] ?? "";
+check(
+  "desktop actions column starts at the top, level with the logo",
+  styleLine("actionsDesktop").includes('alignSelf: "flex-start"')
+);
+check(
+  "desktop hero has no extra top padding pushing the logo down",
+  styleLine("heroDesktop") !== "" && !styleLine("heroDesktop").includes("paddingTop")
 );
 
 if (failures > 0) process.exit(1);

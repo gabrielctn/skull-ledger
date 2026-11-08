@@ -606,13 +606,18 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     justifyContent: "center",
   },
+  // Two columns: the row takes only the height it needs, so the scroll view
+  // centers it vertically, and both columns start on the same line (the logo
+  // level with "New game").
   containerDesktop: {
+    flexGrow: 0,
+    flexBasis: "auto",
     flexDirection: "row",
     alignItems: "flex-start",
     justifyContent: "flex-start",
   },
   hero: { alignItems: "center", marginBottom: spacing.xl },
-  heroDesktop: { flex: 1, marginBottom: 0, paddingTop: spacing.xl },
+  heroDesktop: { flex: 1, marginBottom: 0 },
   emblemWrap: {
     alignItems: "center",
     justifyContent: "center",
@@ -650,7 +655,7 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   actions: { width: "100%", alignSelf: "center" },
-  actionsDesktop: { flex: 1, maxWidth: 420 },
+  actionsDesktop: { flex: 1, maxWidth: 420, alignSelf: "flex-start" },
   activeGameCard: {
     backgroundColor: colors.card,
     borderWidth: 1,
