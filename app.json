@@ -36,7 +36,8 @@
     },
     "plugins": [
       "./plugins/withSkullKingCrewLedgerAppIntents",
-      "./plugins/withMinimumPodDeploymentTarget"
+      "./plugins/withMinimumPodDeploymentTarget",
+      "./plugins/withSceneLifecycle"
     ],
     "experiments": {
       "baseUrl": "/skull-ledger"

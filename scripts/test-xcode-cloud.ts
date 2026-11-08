@@ -98,6 +98,26 @@ check(
     )
 );
 
+// iOS 27 kills apps built with its SDK that have no UIScene lifecycle.
+{
+  const plugin = readFileSync("plugins/withSceneLifecycle.js", "utf8");
+  const sceneDelegate = readFileSync(
+    "native/ios/Scene/SceneDelegate.swift",
+    "utf8"
+  );
+  check(
+    "the app adopts the UIScene lifecycle iOS 27 requires",
+    appConfig.expo.plugins.includes("./plugins/withSceneLifecycle") &&
+      plugin.includes("UIApplicationSceneManifest") &&
+      plugin.includes("$(PRODUCT_MODULE_NAME).SceneDelegate")
+  );
+  check(
+    "the scene delegate creates the window and starts React Native",
+    sceneDelegate.includes("UIWindow(windowScene: windowScene)") &&
+      sceneDelegate.includes('withModuleName: "main"')
+  );
+}
+
 const success = runPostClone(true);
 const failure = runPostClone(false);
 
