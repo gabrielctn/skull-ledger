@@ -49,3 +49,4 @@ marketing/
 
 # Database dumps contain players' game data.
 supabase-backup-*.sql
+supabase/.temp/
